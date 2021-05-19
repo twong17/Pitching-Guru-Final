@@ -1,0 +1,285 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Bootstrap Dashboard by Bootstrapious.com
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='robots' content='all,follow')
+  // Bootstrap CSS
+  //link(rel='stylesheet' href='/stylesheets/vendor/bootstrap/css/bootstrap.min.css')
+  // Font Awesome CSS
+  link(rel='stylesheet' href='/stylesheets/vendor/bootstrap/css/bootstrap.min.css')
+  // Font Awesome CSS
+  link(rel='stylesheet' href='/stylesheets/vendor/font-awesome/css/font-awesome.min.css')
+  // Fontastic Custom icon font
+  link(rel='stylesheet' href='/stylesheets/css/fontastic.css')
+  // Google fonts - Roboto
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+  // jQuery Circle
+  link(rel='stylesheet' href='/stylesheets/css/grasp_mobile_progress_circle-1.0.0.min.css')
+  // Custom Scrollbar
+  link(rel='stylesheet' href='/stylesheets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css')
+  // theme stylesheet
+  link#theme-stylesheet(rel='stylesheet' href='/stylesheets/css/style.default.css')
+  // Custom stylesheet - for your changes
+  link(rel='stylesheet' href='/stylesheets/css/custom.css')
+  // Favicon
+  link(rel='shortcut icon' href='img/favicon.ico')
+  // Tweaks for older IEs
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+// Side Navbar
+nav.side-navbar
+  .side-navbar-wrapper
+    // Sidebar Header
+    .sidenav-header.d-flex.align-items-center.justify-content-center
+      // User Info
+      .sidenav-header-inner.text-center
+        img.img-fluid.rounded-circle(src='/img/avatar-7.jpg' alt='person')
+        h2.h5 Terence Wong
+        span Web Developer
+      // Small Brand information, appears on minimized sidebar
+      .sidenav-header-logo
+        a.brand-small.text-center(href='index.html')
+          strong B
+          strong.text-primary D
+    // Sidebar Navigation Menus
+    .main-menu
+      h5.sidenav-heading Main
+      ul#side-main-menu.side-menu.list-unstyled
+        li
+          a(href='index.html')
+            i.icon-home
+            | Home
+        li
+          a(href='/catalog/datainput')
+            i.icon-form
+            | Data Input
+        li.active
+          a(href='charts.html')
+            i.fa.fa-bar-chart
+            | Charts
+        li
+          a(href='tables.html')
+            i.icon-grid
+            | Tables
+        li
+          a(href='#exampledropdownDropdown' aria-expanded='false' data-toggle='collapse')
+            i.icon-interface-windows
+            | Example dropdown
+          ul#exampledropdownDropdown.collapse.list-unstyled
+            li
+              a(href='#') Page
+            li
+              a(href='#') Page
+            li
+              a(href='#') Page
+        li
+          a(href='login.html')
+            i.icon-interface-windows
+            | Login page
+        li
+          a(href='#')
+            i.icon-mail
+            | Demo
+            .badge.badge-warning 6 New
+    .admin-menu
+      h5.sidenav-heading Second menu
+      ul#side-admin-menu.side-menu.list-unstyled
+        li
+          a(href='#')
+            i.icon-screen  
+            | Demo
+        li
+          a(href='#')
+            i.icon-flask  
+            | Demo
+            .badge.badge-info Special
+        li
+          a(href='')
+            i.icon-flask  
+            | Demo
+        li
+          a(href='')
+            i.icon-picture  
+            | Demo
+.page
+  // navbar
+  header.header
+    nav.navbar
+      .container-fluid
+        .navbar-holder.d-flex.align-items-center.justify-content-between
+          .navbar-header
+            a#toggle-btn.menu-btn(href='#')
+              i.icon-bars  
+            a.navbar-brand(href='index.html')
+              .brand-text.d-none.d-md-inline-block
+                span Bootstrap 
+                strong.text-primary Dashboard
+          ul.nav-menu.list-unstyled.d-flex.flex-md-row.align-items-md-center
+            // Notifications dropdown
+            li.nav-item.dropdown
+              a#notifications.nav-link(rel='nofollow' data-target='#' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                i.fa.fa-bell
+                span.badge.badge-warning 12
+              ul.dropdown-menu(aria-labelledby='notifications')
+                li
+                  a.dropdown-item(rel='nofollow' href='#')
+                    .notification.d-flex.justify-content-between
+                      .notification-content
+                        i.fa.fa-envelope
+                        | You have 6 new messages
+                      .notification-time
+                        small 4 minutes ago
+                li
+                  a.dropdown-item(rel='nofollow' href='#')
+                    .notification.d-flex.justify-content-between
+                      .notification-content
+                        i.fa.fa-twitter
+                        | You have 2 followers
+                      .notification-time
+                        small 4 minutes ago
+                li
+                  a.dropdown-item(rel='nofollow' href='#')
+                    .notification.d-flex.justify-content-between
+                      .notification-content
+                        i.fa.fa-upload
+                        | Server Rebooted
+                      .notification-time
+                        small 4 minutes ago
+                li
+                  a.dropdown-item(rel='nofollow' href='#')
+                    .notification.d-flex.justify-content-between
+                      .notification-content
+                        i.fa.fa-twitter
+                        | You have 2 followers
+                      .notification-time
+                        small 10 minutes ago
+                li
+                  a.dropdown-item.all-notifications.text-center(rel='nofollow' href='#')
+                    strong
+                      i.fa.fa-bell
+                      | view all notifications
+            // Messages dropdown
+            li.nav-item.dropdown
+              a#messages.nav-link(rel='nofollow' data-target='#' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                i.fa.fa-envelope
+                span.badge.badge-info 10
+              ul.dropdown-menu(aria-labelledby='notifications')
+                li
+                  a.dropdown-item.d-flex(rel='nofollow' href='#')
+                    .msg-profile
+                      img.img-fluid.rounded-circle(src='/img/avatar-1.jpg' alt='...')
+                    .msg-body
+                      h3.h5 Jason Doe
+                      span sent you a direct message
+                      small 3 days ago at 7:58 pm - 10.06.2014
+                li
+                  a.dropdown-item.d-flex(rel='nofollow' href='#')
+                    .msg-profile
+                      img.img-fluid.rounded-circle(src='/img/avatar-2.jpg' alt='...')
+                    .msg-body
+                      h3.h5 Frank Williams
+                      span sent you a direct message
+                      small 3 days ago at 7:58 pm - 10.06.2014
+                li
+                  a.dropdown-item.d-flex(rel='nofollow' href='#')
+                    .msg-profile
+                      img.img-fluid.rounded-circle(src='/img/avatar-3.jpg' alt='...')
+                    .msg-body
+                      h3.h5 Ashley Wood
+                      span sent you a direct message
+                      small 3 days ago at 7:58 pm - 10.06.2014
+                li
+                  a.dropdown-item.all-notifications.text-center(rel='nofollow' href='#')
+                    strong
+                      i.fa.fa-envelope
+                      | Read all messages
+            // Languages dropdown
+            li.nav-item.dropdown
+              a#languages.nav-link.language.dropdown-toggle(rel='nofollow' data-target='#' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                img(src='/img/flags/16/GB.png' alt='English')
+                span.d-none.d-sm-inline-block English
+              ul.dropdown-menu(aria-labelledby='languages')
+                li
+                  a.dropdown-item(rel='nofollow' href='#')
+                    img.mr-2(src='/img/flags/16/DE.png' alt='English')
+                    span German
+                li
+                  a.dropdown-item(rel='nofollow' href='#')
+                    img.mr-2(src='/img/flags/16/FR.png' alt='English')
+                    span French                                                         
+            // Log out
+            li.nav-item
+              a.nav-link.logout(href='login.html')
+                span.d-none.d-sm-inline-block Logout
+                i.fa.fa-sign-out
+  // Breadcrumb
+  .breadcrumb-holder
+    .container-fluid
+      ul.breadcrumb
+        li.breadcrumb-item
+          a(href='index.html') Home
+        li.breadcrumb-item.active Charts       
+  section.charts
+    .container-fluid
+      // Page Header
+      header
+        h1.h3.display Charts            
+      .row
+        .col-lg-6
+          .card.line-chart-example
+            .card-header.d-flex.align-items-center
+              h4 Line Chart Example
+            .card-body
+              canvas#lineChartExample
+        .col-lg-6
+          .card.bar-chart-example
+            .card-header.d-flex.align-items-center
+              h4 Bar Chart Example
+            .card-body
+              canvas#barChartExample
+        .col-lg-6
+          .card.pie-chart-example
+            .card-header.d-flex.align-items-center
+              h4 Pie Chart Example
+            .card-body
+              .chart-container
+                canvas#pieChartExample
+        .col-lg-6
+          .card.polar-chart-example
+            .card-header.d-flex.align-items-center
+              h4 Ploar Chart Example
+            .card-body
+              .chart-container
+                canvas#polarChartExample
+        .col-lg-12
+          .card.radar-chart-example
+            .card-header.d-flex.align-items-center
+              h4 Radar Chart Example
+            .card-body
+              .chart-container
+                canvas#radarChartExample
+  footer.main-footer
+    .container-fluid
+      .row
+        .col-sm-6
+          p Your company &copy; 2017-2020
+        .col-sm-6.text-right
+          p
+            | Design by 
+            a.external(href='https://bootstrapious.com/p/bootstrap-4-dashboard') Bootstrapious
+          // Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions and it helps me to run Bootstrapious. Thank you for understanding :)
+// JavaScript files
+script(src='/stylesheets/vendor/jquery/jquery.min.js')
+script(src='/stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js')
+script(src='/stylesheets/js/grasp_mobile_progress_circle-1.0.0.min.js')
+script(src='/stylesheets/vendor/jquery.cookie/jquery.cookie.js')
+script(src='/stylesheets/vendor/chart.js/Chart.min.js')
+script(src='/stylesheets/vendor/jquery-validation/jquery.validate.min.js')
+script(src='/stylesheets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js')
+script(src='/stylesheets/js/charts-custom.js')
+// Main File
+script(src='/stylesheets/js/front.js')

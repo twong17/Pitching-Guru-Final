@@ -1,0 +1,104 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Data Input Page
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='robots' content='all,follow')
+  // Bootstrap CSS
+  //link(rel='stylesheet' href='/stylesheets/vendor/bootstrap/css/bootstrap.min.css')
+  // Font Awesome CSS
+  link(rel='stylesheet' href='/stylesheets/vendor/bootstrap/css/bootstrap.min.css')
+  // Font Awesome CSS
+  link(rel='stylesheet' href='/stylesheets/vendor/font-awesome/css/font-awesome.min.css')
+  // Fontastic Custom icon font
+  link(rel='stylesheet' href='/stylesheets/css/fontastic.css')
+  // Google fonts - Roboto
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+  // jQuery Circle
+  link(rel='stylesheet' href='/stylesheets/css/grasp_mobile_progress_circle-1.0.0.min.css')
+  // Custom Scrollbar
+  link(rel='stylesheet' href='/stylesheets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css')
+  // theme stylesheet
+  link#theme-stylesheet(rel='stylesheet' href='/stylesheets/css/style.default.css')
+  // Custom stylesheet - for your changes
+  link(rel='stylesheet' href='/stylesheets/css/custom.css')
+  // Favicon
+  link(rel='shortcut icon' href='img/favicon.ico')
+  link(rel='stylesheet', href='/stylesheets/inputstyle.css')
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/heatmap.js')
+  script(src='https://cdn.plot.ly/plotly-latest.min.js')
+  script(src='https://cdn.socket.io/3.1.1/socket.io.min.js')
+.page.login-page
+  .container
+    .form-outer.text-center.d-flex.align-items-center
+      .form-inner
+        .logo.text-uppercase
+          img(src='/img/logo.png' alt='person' style='width: 30%')
+          span Pitching
+          strong.text-primary Guru
+        br
+        br
+        h1 Success!
+        a.signup(href='/catalog') Go back to sign in page
+        //form.text-left.form-validate(method='POST' action='' style='text-align: center;')
+        
+          
+
+
+            
+
+
+
+
+// JavaScript files
+script(src='/stylesheets/vendor/jquery/jquery.min.js')
+script(src='/stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js')
+script(src='/stylesheets/js/grasp_mobile_progress_circle-1.0.0.min.js')
+script(src='/stylesheets/vendor/jquery.cookie/jquery.cookie.js')
+script(src='/stylesheets/vendor/chart.js/Chart.min.js')
+//script(src='/stylesheets/vendor/jquery-validation/jquery.validate.min.js')
+script(src='/stylesheets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js')
+script(src='/stylesheets/js/charts-custom.js')
+// Main File
+script(src='/stylesheets/js/front.js')
+script(src='/javascripts/inputdatascript2.js')
+
+
+
+
+
+
+
+//head
+//link(rel='stylesheet', href='/stylesheets/register.css')
+//title Create Account Page
+// Page content
+//.bodywrapper
+  form(method='POST' action='' enctype='multipart/form-data')
+    div
+    h3
+      | Welcome to Trove. by SYNERGY
+    h1.h1 Add a profile picture
+    form
+      .log-in
+        .line1
+          label Select your profile picture:
+          input.line2(type='file' name='profile_pic')
+        //.line1
+          label Last name:
+          input#lastname.form-control(type='text', placeholder='Last name' name='lastname' value=(undefined===userinfo ? '' : userinfo.lastname))
+        //.line1
+          label Username:
+          input#username.form-control(type='text', placeholder='Username' name='username' value=(undefined===userinfo ? '' : userinfo.username))
+          //input.line2(type='text' name='user' placeholder='JohnDoe1')
+        //.line1
+          label Password:
+          input#password.form-control(type='text', placeholder='Password' name='password' value=(undefined===userinfo ? '' : userinfo.password))
+        //p
+          | Already have an account? 
+          a(href='url') Log-in.
+      .form__submit-button
+        input(type='submit')

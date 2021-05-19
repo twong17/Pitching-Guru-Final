@@ -1,0 +1,26 @@
+html
+  link(rel='stylesheet', href='/stylesheets/inputstyle.css')
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/heatmap.js')
+  script(src='https://cdn.plot.ly/plotly-latest.min.js')
+  script(src='https://cdn.socket.io/3.1.1/socket.io.min.js')
+  body
+    br
+    br
+    .container(style='height:1100;')
+      section#main
+        // <h1>Home</h1>
+      //canvas#myCanvas(style='background-color: aqua' width='800' height='800')
+      canvas#myCanvas(width='800' height='800')
+      //div#heatmapContainerWrapper
+        div#heatmapContainer
+            div(class="rectangle")
+      form(method='POST' action='/catalog/heatmap/send')
+          input#Test2(type='text' name ='Test')
+          //h3#Test(name='Test') Testing area
+          button(onclick='createMap()') Try it
+      #myDiv
+      #heatmap-container2
+          img#jpg-export
+          .rectangle  
+  script(src='/javascripts/inputdatascript2.js')

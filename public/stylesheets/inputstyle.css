@@ -1,0 +1,144 @@
+#heatmapContainerWrapper{
+     width:1000px;
+    height:1000px;
+    margin:auto;
+    background:rgba(0,0,0,.1); 
+}
+
+#heatmapContainer{
+    width: 100%;
+    height:100%
+}
+
+/*
+.rectangle {
+    position:relative;
+  height: 400px;
+  width: 300px;
+  margin-left:200px;
+    top: 200px;
+  background-color: lightblue;
+}
+}
+*/
+.rectangle {
+    position:relative;
+  height: 600px;
+  width: 600px;
+  margin-left:200px;
+    top: 200px;
+/*
+  background-color: lightblue;
+}
+*/
+}
+
+
+#heatmapContainerWrapper{
+     width:1000px;
+    height:1000px;
+    margin:auto;
+    background:rgba(0,0,0,.1); 
+}
+
+#heatmapContainer2{
+    width: 100%;
+    height:100%
+}
+
+.rectangle {
+    position:relative;
+  height: 400px;
+  width: 300px;
+
+  margin-left:280px;
+    top: -85px;
+
+  
+    border-style: solid;
+}
+
+#jpg-export{
+    position:relative;
+    margin-left:200px;
+    top: 400px;
+}
+
+#heatmap-container2{
+    background-color:lightblue;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#daily-feeds.card.updates.daily-feeds{
+    width:40%;
+    float:right;
+}
+
+.clearfix{
+    border:1.5px solid rgba(0,0,0,.125);
+}
+.card-header{
+    border:1.5px solid rgba(0,0,0,.125);
+}
+
+
+#myCanvas{
+/*    background-color: aqua;*/
+    border: 2px solid rgba(211,211,211,0.9);
+}
+.feed-box{
+    border:1.5px solid rgba(0,0,0,.125);
+    height:500px;
+    overflow-y:auto;
+}
+
+ .vertical-line{
+     background-color: aqua;
+width: 175px;
+height: 800px;
+border-right: 1px solid black;
+position: absolute;
+}
+
+#Test2{
+    visibility: hidden;
+    display: none;
+}
